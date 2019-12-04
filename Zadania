@@ -1,0 +1,525 @@
+def rek(n):
+    if n==1:
+        return 10
+    if n%2==0:
+        return rek(n-1)-3
+    if n%2==1:
+        return rek(n-1)*2
+print(rek(5))
+
+
+
+"""
+def pisz(s, n, k):
+    if len(s) == n:
+        print(s)
+    else:
+        for i in range(k):
+            pisz(s + str(i),n,k)
+"""
+
+
+"""
+#1.34f
+def rek(n):
+    if n==1:
+        return 1.5
+    if n==2:
+        return 1
+    if n==3:
+        return 0.5
+    return 2*rek(n-1)-rek(n-3)
+print(rek(5))
+"""
+"""
+#1.34e
+
+def rek(n):
+    if n==1:
+        return 3
+    if n%2==0:
+        return rek(n-1)+2
+    if n%2==1:
+        return rek(n-1)-1
+print(rek(8))
+"""
+
+"""
+#1.34b
+def rek(n):
+    if n==1:
+        return 2
+    return rek(n-1)*2
+print(rek(8))
+"""
+"""
+#1.34a
+def rek(n):
+    if n==1:
+        return 4
+    return rek(n-1) + 3
+print(rek(3))
+"""
+
+"""
+#1.35d
+n = int(input())
+def rek(n):
+    if n==1:
+        return -1.5
+    if n==2:
+        return 0
+    if n==3:
+        return 1.5
+    return 2*rek(n-3) + rek(n-2) - rek(n-1)
+"""
+"""
+#1.35e
+n = int(input())
+def rek(n):
+    if n==1:
+        return 1
+    if n==2:
+        return 2
+    if n==3:
+        return 3
+    return rek(n-3) + 2*rek(n-1)
+print(rek(n))
+"""
+"""
+#1.35c
+n = int(input())
+def rek(n):
+    if n==1:
+        return 2
+    if n==2:
+        return -4
+    return 3*rek(n-1) + 2*rek(n-1) + 0.5*rek(n-1)
+print(rek(n))
+"""
+"""
+#1.35b
+n = int(input())
+def rek(n):
+    if n==1:
+        return 0.5
+    if n==2:
+        return 1
+    return 3*rek(n-1) + rek(n-1)
+print(rek(n))
+"""
+"""
+#1.35a
+n = int(input())
+def rek(n):
+    if n==1:
+        return 2
+    return 3*rek(n-1) + 0.5
+print(rek(n))
+"""
+
+"""
+def rek2(n):
+    if n==1:
+        return 1
+    if n==2:
+        w = 2
+    if n>2:
+        w = 3
+    return rek2(n-1)*w
+
+print(rek2(5))
+"""
+
+#Idea rekurencji
+"""
+def rek(n):
+    print(n)
+    if n==1:
+        return 1
+    else:
+        rek(n-1)
+
+    print(n)
+rek(5)
+"""
+"""
+def rek(n):
+    print(n)
+    if n==1:
+        return 1
+    else:
+        return rek(n-1)
+
+rek(5)
+"""     
+
+
+
+
+
+
+
+
+########################
+#SPRAWDZIAN PRZYKLADOWY#
+########################
+
+#ZAD1 Co ten algorytm napisze
+"""
+a = 5
+b = a - 4
+for i in range(5):
+    a = a + b + i
+
+a = b + b
+b = a + b
+
+print(a,b)
+"""
+#ZAD2 Popraw błedy
+#' =
+"""
+a = 4
+for i in range(n')
+    if i%2='0'
+        a = a + 1
+prynt'(a)
+"""
+
+#ZAD3 Oblicz sume trzycyfrowych parzystych wielokrotnosci 13
+"""1
+s = 0
+for i in range(100,1000):
+    if i%2==0 and i%13==0:
+        s = s+i
+print(s)
+"""
+#ZAD4 Sprawdz czy pierwsza wpisana liczba a jest wieksza 
+#niz 30% sumy dwoch kolejnych wpisanych
+#b i c
+"""
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a>(0.3*(b+c)):
+    print("Tak")
+else:
+    print("Nie")
+"""
+
+#ZAD5 Oblicz sume: 1/3 + 1/5 + 1/7 + 1/9 +...
+"""
+n = int(input())
+s = 0
+for i in range(n):
+    s = s+1/(2*i+3)
+print(s)
+"""
+
+
+
+#rozpietosc 2-elementowego zbioru cyfr 3cyfrowych
+#1
+"""
+from random import randrange, random
+from math import fabs
+a, b = randrange(100,1000), randrange(100,1000)
+print(int(fabs(a-b)))
+"""
+#2
+"""
+from random import randrange, random
+a = (randrange(100,1000,1))
+b = (randrange(100,1000,1))
+if a>b:
+    print(a-b)
+else:
+    print(b-a)
+"""    
+
+
+
+
+
+"""
+a = int(input("Twoja liczba1"))
+b = int(input("Twoja liczba2"))
+c = int(input("Twoja liczba3"))
+from random import randrange, random
+print(randrange(0,10,1))
+print(randrange(0,10,1))
+print(randrange(0,10,1))
+"""
+"""
+int(input("Twoja liczba"))
+from random import randrange, random
+print(randrange(0,10,1))
+"""
+
+
+
+"""
+import random
+print(random.randrange(10))
+"""
+
+
+"""
+p = int(input())
+
+for i in range(n):
+        if p%1==0:
+        print(n, end=" ")
+"""
+
+
+"""
+for i in range(100,1000):
+    if i%15==0:
+        print(i, end=" ")
+"""
+
+"""
+n = int(input())
+
+s = 0
+
+for j in range(n):
+    
+    w = 1
+    for i in range(j+1):
+        w = w * (i+1)
+    s = s + w
+print(s)
+"""
+"""
+# algorytm rozwiązujący równanie kwadratowe
+
+#WE: a b c
+from math import sqrt
+
+a = int(input())
+b = int(input())
+c = int(input())
+
+if a==0:
+    print("Nara, nie liczę tego")
+else:
+    d = b**2 - 4*a*c
+    if d<0:
+        print("Brak pierwiastków")
+    elif d==0:
+        print("x0=b/2a czyli x0=",b/-2*a)
+    else:
+        x1 = ((-1)*b-sqrt(d))/2*a
+        x2 = ((-1)*b+sqrt(d))/2*a
+        print("x1=",x1, "x2=",x2)
+"""
+
+# spr czy liczba n jest pierwsza
+"""
+n = int(input())
+
+flag = 0
+for i in range(2,n):
+    if n%i==0:
+        flag = 1
+if flag==1:
+    print("nie")
+else:
+    print("tak")
+"""
+
+# 1.28b
+"""
+for i in range(4):
+    for j in range(i+1):
+        print("*", end="")
+    if i%2==0:
+        print("&&",end ="")
+    else:
+        print("^^",end="")
+"""
+
+
+# 1.28b - pomocnicze
+"""
+for i in range (1,6):
+    print ("*"*i)
+"""
+
+"""
+for i in range(5)
+    for j in range(i+1)
+        print("*", end="')
+    print("")
+"""
+
+# 1.28a
+"""
+for i in range (6):
+    print ("*""-""|", end=" ")
+"""
+
+
+# 1.21c
+"""
+n = int(input())
+w = 1
+for i in range(n):
+    w = w*(i+1+3)/n
+print(w)
+"""
+
+# 1.21b
+"""
+n = int(input())
+w = 0
+for i in range(n):
+    w = w + (1/2)/(i+1)
+print(w)
+"""
+
+# 1.21a 
+"""
+n = int(input())
+s = 0 
+for i in range(n):
+    s = s + (i+1)
+
+print(2*n/s)
+"""
+
+# 3 6 12 24 64
+"""
+#n = int(input())
+#a = 1
+#for i in range (n):
+#    print(a)
+#    a = a*(-2)
+"""    
+
+
+#n = int(input())
+#a = a*2
+#for i in range (3,n,a):
+#        print(i)
+
+#for i in range(7):
+#    print(4*i-12)
+
+
+#7 => -4 -1 2 5 8 11 14
+"""
+a = -7
+for i in range (7)
+    a = a+3
+        print(a)
+
+for i in range (-4,17,3):
+    print(i)
+
+for i in range(7):
+    print(3*i-4)
+"""
+
+#x = int(input())
+#for i in range (1,x+1):
+#    print(i, end=" ")
+
+
+#for i in range (10,100):
+#    if i%3!=0:
+#        print(i, end=" ")
+
+
+#for i in range(1,21):
+#    print(i,"^2","=",i*i)
+
+
+
+#for i in range(20,4,-1):
+#    print(i, end=" ")
+
+
+
+#for i in range(2,21,2):
+#    print(i, end=" ")
+
+
+
+#for i in range(1,11):
+#    print(i*2, end=" ")
+
+
+
+
+#for i in range(0,10):
+#    print(9-i, end=" ")
+
+
+#for i in range(10,100):
+#    print(i, end=" ") 
+
+
+
+
+#WE: a b
+#WY: a^2 + b^2
+#a = int(input())
+#b = int(input())
+#print(a**2 + b**2)
+
+
+#x = int(input("Podaj liczbe"))
+#if x%2==0:
+#    print("parzysta")
+#else:
+#    print("nieparzysta")
+
+
+
+#x = int(input("Ile masz lat?"))
+#a=6
+#b=12
+#c=17
+#d=18
+#if x<a:
+#    print("Dziecko")
+#else:
+#    if x>a and x<=b:
+#        print("Nieletni")
+#    else:
+#        if x>b and x<=c:
+#            print("Małoletni")
+#        else:
+#            if x>=d:
+#                print("Pełnoletni")
+
+
+#x = int(input("Podaj liczbe"))
+#if x>=10 and x<=99:
+#    print("ok")
+#else:
+#    print("nie")
+    
+
+
+
+#a = int(input("podaj liczbe"))
+#if a>=10:
+#    print("Ok")
+#else:
+#    print("Za mało")
+
+
+#lista = ["Romek", "Paweł", "Gaweł"]
+#print(lista)
+
+
+#s = int(input("Jaka stawka?"))
+#g = int(input("Ile godzin?"))
+#print ("Podatek 15%:",s*g*0.15)
+#print ("Wypłata:",s*g*0.85)
